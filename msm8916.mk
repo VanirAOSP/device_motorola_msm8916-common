@@ -82,6 +82,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.msm8916 \
     libbson \
+    libshim_camera \
     Snap
 
 # CMActions
@@ -164,17 +165,12 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
 
-# Stlport
-PRODUCT_PACKAGES += \
-    libstlport
-
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:system/etc/thermal-engine.conf
 
 # Wifi
 PRODUCT_PACKAGES += \
-    dhcpcd.conf \
     hostapd_default.conf \
     hostapd \
     wpa_supplicant \
